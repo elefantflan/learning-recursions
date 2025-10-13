@@ -7,7 +7,16 @@
 </head>
 <body>
     <script>
+        // check all values in an array
+        function all(array, parameter){
+            parameter = array.forEach(item)
+        }
         
+        var allAreLessThanSeven = all([1,2,6], function(n){
+            return n < 7;
+        })
+
+        console.log(allAreLessThanSeven)
     </script>
 </body>
 </html>
