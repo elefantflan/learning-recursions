@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printEveryOther(n){
+            if(n>100) return;
+            console.log(n)
+            printEveryOther(n+2)
+        }
+
+    // 1-100: 1, 3, 5, 7, etc
+    // 0-100: 0, 2, 4, 6, 8
+    // stop when 100   
+    printEveryOther(0)
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printOnetoNumber(n, i=1){
+            if(i>n) return;
+            console.log(i)
+            printOnetoNumber(n, i+1)
+        }
+        printOnetoNumber(10)
+
+        function anotherSolution(n){
+            if(n===0) return;
+            anotherSolution(n-1);
+            // n=1 is on top of the stack
+            // then n = 2..
+            // then n = 3..
+            // in that order
+            console.log(n)
+        }
+        
+        anotherSolution(10)
+    </script>
+</body>
+</html>
